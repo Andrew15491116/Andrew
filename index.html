@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>CSS. Часть №7 (псевдоэлементы)</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   </head>
+	
+	<body>
+		
+
+		<div class="user">
+				Андрей Герасименко <br/>
+				Начинающий web-программист / Junior Frontend Developer
+		</div>
+		
+		<script>
+			addEventListener('keydown', function(event) {
+				if (event.keyCode == 32) {
+					var el = document.getElementsByClassName('user')[0];
+					
+					if (el) {
+						el.remove();
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
